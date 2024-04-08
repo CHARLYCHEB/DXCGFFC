@@ -1,52 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>M I N E C R A F T</title>
+<title>eagler</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Minecar" />
-<meta name="keywords" content="I am Very Silly" />
+<meta name="description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions." />
+<meta name="keywords" content="minecraft, eaglercraft, singleplayer, applet, replit, browser, html5, javascript, chromebook, lax1dude, games, eagler" />
+<meta name="description" content="craft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions." />
+<meta name="keywords" content="minecraft, craft, singleplayer, applet, replit, browser, html5, javascript, chromebook, lax1dude, games, eagler" />
 <meta name="author" content="lax1dude" />
+<meta property="og:title" content="Eaglercraft" />
 <meta property="og:title" content="craft" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="website" />
 <!-- Change this: <meta property="og:image" content="https://media.discordapp.net/attachments/378764518081429506/932053915061587978/thumbnail2.png" /> -->
-<meta property="og:description" content="Minecaft" />
+<meta property="og:description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions." />
+<!-- Change this: <meta property="og:url" content="https://g.eags.us/eaglercraft/" /> -->
+<meta property="og:description" content="craft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions." />
 <!-- Change this: <meta property="og:url" content="https://g.eags.us/craft/" /> -->
 <script type="text/javascript" src="classes.js"></script>
 <script type="text/javascript" src="eagswebrtc.js"></script>
 <script type="text/javascript">
-if(document.location.href.startsWith("file:")) {
-alert("No use file.");
+@@ -21,7 +21,7 @@
 }else {
 window.addEventListener("load", function(){
 const relayId = Math.floor(Math.random() * 3);
+window.eaglercraftOpts = {
 window.craftOpts = {
 container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
 servers: [
 	{ serverName: "OMIT", serverAddress: "ws://omit.tk", hideAddress: true }
-],
-relays: [
-	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
-	{ addr: "wss://relay.lax1dude.net/", name: "lax1dude relay #2", primary: relayId == 1 },
-	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
-],
-mainMenu: { splashes: [
-"Also Try Ruffle", "Hi Sadie! and/or Lincon! ", "Fish", "HELP IM STUCK IN THE CODE!", "RAID: Shadow Legends™️ is an immersive online experience with everything you'd expect from a brand new RPG title. It's got an amazing storyline, awesome 3D graphics, giant boss fights, PVP battles, and hundreds of never before seen champions to collect and customize. I never expected to get this level of performance out of a mobile game. Look how crazy the level of detail is on these champions! RAID: Shadow Legends™️ is getting big real fast, so you should definitely get in early. Starting now will give you a huge head start. There's also an upcoming Special Launch Tournament with crazy prizes! And not to mention, this game is absolutely free! So go ahead and check out the video description to find out more about RAID: Shadow Legends™️. There, you will find a link to the store page and a special code to unlock all sorts of goodies. Using the special code, you can get 50,000 Silver immediately, and a FREE Epic Level Champion as part of the new players program, courtesy of course of the RAID: Shadow Legends™️ devs.",
-"Also Try Emulator JS", "https://www.youtube.com/watch?v=LLioV0tGYjw", "https://www.youtube.com/watch?v=WIRK_pGdIdA", "Wyatt Was Here", "Try To Find All 11", "Imagne Still Playing 1.5.2"
-], eaglerLogo: false }};
-(function(){
-var q = window.location.search;
-if(typeof q === 'string' && q.startsWith("?")) {
-	q = new URLSearchParams(q);
-	var s = q.get("server");
-	if(s) window.minecraftOpts.push(s);
-}
-})();
-main();
-});}
-</script>
-</head>
-<body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
-</body>
-</html>
